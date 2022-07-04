@@ -8,21 +8,26 @@ class Dog
     @@num_dogs += 1
   end
 
-  def self.method
-    puts "class method called!"
+  def change_name
+    self.name = name
   end
 
-  def method
-    puts "instance method called!"
-  end
+  private attr_writer :name
+  # def self.method
+  #   puts "class method called!"
+  # end
 
-  def self.mystery_method
-    self.method
-  end
+  # def method
+  #   puts "instance method called!"
+  # end
 
-  def mystery_method
-    self.method
-  end
+  # def self.mystery_method
+  #   self.method
+  # end
+
+  # def mystery_method
+  #   self.method
+  # end
 end
 
 fido = Dog.new("Fido", "Jack russell", "2")
