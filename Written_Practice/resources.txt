@@ -1,0 +1,3 @@
+Online REPL: https://replit.com/@IsabelArribas/OrchidSphericalOpen64#main.rb
+Stopwatch: https://www.google.com/search?q=stopwatch&rlz=1C1DIMC_enIE810IE810&oq=stopwatch&aqs=chrome..69i57j0i512l9.2312j0j7&sourceid=chrome&ie=UTF-8
+Practice problems: https://docs.google.com/document/d/10JvX-ArkfF8fIWQu8wPaYt7JJHrv_5E0gM0I2uPirwI/edit

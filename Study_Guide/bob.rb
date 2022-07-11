@@ -1,33 +1,33 @@
 # Given the below usage of the Person class, code the class definition.
 
-class Person
-  attr_accessor :first_name, :last_name
+# class Person
+#   attr_accessor :first_name, :last_name
 
-  def initialize(name)
-    self.name = name
-  end
+#   def initialize(name)
+#     self.name = name
+#   end
 
-  def parse(name)
-    return name.split if name.split.length == 2
-    [name, '']
-  end
+#   def parse(name)
+#     return name.split if name.split.length == 2
+#     [name, '']
+#   end
 
-  def name
-    last_name.empty? ? first_name : first_name + ' ' + last_name
-  end
+#   def name
+#     last_name.empty? ? first_name : first_name + ' ' + last_name
+#   end
 
-  def name=(name)
-    @first_name, @last_name = parse(name)
-  end
+#   def name=(name)
+#     @first_name, @last_name = parse(name)
+#   end
 
-  def ==(other)
-    name == other.name
-  end
+#   def ==(other)
+#     name == other.name
+#   end
 
-  def to_s
-    name
-  end
-end
+#   def to_s
+#     name
+#   end
+# end
 
 # bob = Person.new('bob')
 # puts bob.name                  # => 'bob'
@@ -101,6 +101,25 @@ end
 
 # Now, what does the below output?
 
-bob = Person.new("Robert Smith")
-puts "The person's name is: #{bob}" # The person's name is: Robert Smith
+# bob = Person.new("Robert Smith")
+# puts "The person's name is: #{bob}" # The person's name is: Robert Smith
 
+#=================================================
+class Person
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+  
+  def change_name
+    name = name.upcase
+    # vs
+    # self.name = name.upcase
+  end
+end
+
+bob = Person.new('Bob')
+p bob.name 
+bob.change_name
+p bob.name
