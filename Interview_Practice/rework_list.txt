@@ -1,0 +1,8 @@
+
+
+1. (person) How is it possible to only add one line of code??
+3. (human_2) is there a mistake in the code? How can you produce annagilles without changing the state of the objects??
+4. (barbarian) --- good to practice talking through the code, doesn't actually need reworking though.
+5. (monster) is this the correct form of duck typing?
+6. (classes) how can you not add any methods? does overriding a method count as adding a method?
+
